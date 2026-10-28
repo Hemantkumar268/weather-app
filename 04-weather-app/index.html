@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <!-- Search -->
+        <div class="input-container">
+            <input
+                class="form-control"
+                type="search"
+                placeholder="Search city..."
+                aria-label="Search"
+                id="searchInput"
+            >
+
+            <button
+                class="btn btn-outline-success"
+                type="button"
+                id="searchbtn"
+            >
+                Search
+            </button>
+        </div>
+
+
+        <!-- Error / Loading -->
+        <p id="error"></p>
+        <p id="loading"></p>
+        <p id="warning"></p>
+
+
+        <!-- Current Weather -->
+        <div id="weatherCard" class="weather-card">
+
+            <div class="weather-main">
+
+                <h2 id="city"></h2>
+
+                <img id="weathericon" alt="Weather icon">
+
+                <p id="temperature"></p>
+
+                <p id="description"></p>
+
+            </div>
+
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+                <div class="detail-box">
+                    <span>🌡️ Feels Like</span>
+                    <p id="feelslike"></p>
+                </div>
+
+                <div class="detail-box">
+                    <span>💧 Humidity</span>
+                    <p id="humidity"></p>
+                </div>
+
+                <div class="detail-box">
+                    <span>💨 Wind</span>
+                    <p id="wind"></p>
+                </div>
+
+                <div class="detail-box">
+                    <span>🧭 Pressure</span>
+                    <p id="pressure"></p>
+                </div>
+
+                <div class="detail-box">
+                    <span>🍃 AQI</span>
+                    <p id="aqi"></p>
+                    <small id="aqiStatus"></small>
+                </div>
+
+            </div>
+
+
+            <!-- Sunrise / Sunset -->
+            <div class="sun-info">
+
+                <div>
+                    <span>🌅 Sunrise</span>
+                    <p id="sunrise"></p>
+                </div>
+
+                <div>
+                    <span>🌇 Sunset</span>
+                    <p id="sunset"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Forecast -->
+        <section class="forecast-section">
+
+            <h2 class="forecast-title">
+                5-Day Forecast
+            </h2>
+
+            <div id="forecast-container"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
