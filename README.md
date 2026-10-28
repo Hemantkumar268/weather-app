@@ -4,13 +4,7 @@ A responsive Weather App built with HTML, CSS, JavaScript, Bootstrap, and the Op
 
 ## 🚀 Live Demo
 
-**Live Website:** [View Weather App](PASTE_YOUR_NETLIFY_URL_HERE)
-
-## 🎥 Project Demo
-
-Watch the project demonstration video:
-
-[▶️ Watch Weather App Demo](PASTE_YOUR_GITHUB_VIDEO_URL_HERE)
+**Live Website:** [View Weather App](https://lucky-griffin-7a90bb.netlify.app/)
 
 ## ✨ Features
 
